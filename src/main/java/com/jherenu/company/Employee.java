@@ -1,6 +1,6 @@
 package com.jherenu.company;
 
-public class Employee {
+public abstract class Employee {
     private Long id;
     private String name;
     private String lastName;
