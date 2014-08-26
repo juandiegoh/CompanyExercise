@@ -21,10 +21,10 @@ public class Employee {
     public boolean equals(Object other) {
         if (other == null) return false;
         if (!(other instanceof Employee)) return false;
-        if (id != ((Employee) other).getId()) return false;
-        if (name != ((Employee) other).name) return false;
-        if (lastName != ((Employee) other).lastName) return false;
-        if (age != ((Employee) other).age) return false;
+        if (!id.equals(((Employee) other).id)) return false;
+        if (!name.equals(((Employee) other).name)) return false;
+        if (!lastName.equals(((Employee) other).lastName)) return false;
+        if (!age.equals(((Employee) other).age)) return false;
         return true;
     }
 
